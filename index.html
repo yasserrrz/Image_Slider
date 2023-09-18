@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontAwesome icon/all.css" />
+  </head>
+  <style>
+    #boxShow {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.169);
+    }
+    .item img {
+      cursor: pointer;
+    }
+    i {
+      cursor: pointer;
+      color: antiquewhite;
+    }
+    .innerBox {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(image/portfolio-1.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .x {
+      border: solid 3px black;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 1.1rem;
+    }
+    .xm {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 1.1rem;
+      border: solid 3px black;
+      border-radius: 50%;
+      padding: 5px 8px;
+    }
+    h2 {
+      color: rgb(177, 177, 177);
+    }
+    @media screen and (min-width: 1250px) {
+      .container {
+        width: 65%;
+      }
+    }
+  </style>
+  <body class="bg-black">
+    <h2 class="text-center mt-5">Click On The Picture</h2>
+    <div class="container">
+      <div class="row mb-5 g-2 p-5">
+        <div class="col-lg-4 col-md-6 item col-sm-12">
+          <img
+            src="image/pexels-alexander-krivitskiy-6705398.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 item col-sm-12">
+          <img
+            src="image/pexels-alexander-krivitskiy-960855.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 item col-sm-12">
+          <img
+            src="image/pexels-sabel-blanco-1631627.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 item col-sm-12">
+          <img
+            src="image/pexels-ozan-çulha-15290514.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 item col-sm-12">
+          <img
+            src="image/pexels-polina-guryanova-14482250.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 item col-sm-12">
+          <img
+            src="image/pexels-sabrina-kennelly-2883573.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="boxShow" class="justify-content-center align-items-center">
+      <div
+        class="innerBox w-50 d-flex align-items-center justify-content-between p-1"
+      >
+        <i class="fa-solid fa-arrow-left previous x"></i>
+        <i class="fa-solid fa-arrow-right next x"></i>
+        <i class="fa-solid fa-xmark xm"></i>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
